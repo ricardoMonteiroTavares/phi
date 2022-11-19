@@ -1,24 +1,26 @@
 <script>
+	import DrawerMenu from '$lib/component/DrawerMenu/DrawerMenu.svelte';
+
 	import Header from './Header.svelte';
 	import './styles.css';
 </script>
 
 <div class="app">
-	<Header />
-
+	<DrawerMenu />
 	<main>
+		<Header />
 		<slot />
+		<footer>
+			<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+		</footer>
 	</main>
 
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
 </div>
 
 <style>
 	.app {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
 		min-height: 100vh;
 	}
 
