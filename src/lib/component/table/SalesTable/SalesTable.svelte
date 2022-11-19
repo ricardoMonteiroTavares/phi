@@ -35,7 +35,7 @@
         <th>Status</th>
         <th>Ações</th>
     </tr>
-    {#each sales as sale}
+    {#each sales as sale, index}        
         <SalesTableLine {...sale} />
     {/each}
 </table>
