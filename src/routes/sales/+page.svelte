@@ -1,4 +1,6 @@
 <script>
+	import Card from "$lib/component/Card/Card.svelte";
+
 	import SalesTable from "$lib/component/table/SalesTable/SalesTable.svelte";
 
 </script>
@@ -9,5 +11,7 @@
 
 <section>
     <h1>Vendas</h1>
-    <SalesTable />
+    <Card>
+        <SalesTable />
+    </Card>
 </section>
