@@ -4,10 +4,13 @@
     export let path: string;    
 </script>
 
-<div 
+<a 
     class="drawer_menu_item" 
     aria-current={$page.url.pathname === path ? 'page' : undefined}
->{name}</div>
+    href={path}
+>
+    {name}
+</a>
 
 <style>
     .drawer_menu_item {
@@ -15,10 +18,16 @@
         align-items: center;
         height: 40px;
         width: 100%;
-        color: white;     
+        color: white;   
+        padding-left: 5px;  
+        margin-top: 5px;
+        margin-bottom: 5px;
+        text-decoration: none;
     }
 
-    .drawer_menu_item[aria-current='page'] {
+    .drawer_menu_item[aria-current='page'], .drawer_menu_item:hover {
         background-color: chocolate;
+        border-radius: 5px;
+        transition-duration: 0.45s;
     }
 </style>
