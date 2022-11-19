@@ -19,7 +19,7 @@
     .drawer_menu {
         height: 100vh;
         width: 210px;
-        background-color: var(--background-color);
+        background-color: var(--primary-color);
         padding-left: 15px;
         padding-right: 15px;
     }    
