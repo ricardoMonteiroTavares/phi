@@ -18,7 +18,7 @@
         align-items: center;
         height: 40px;
         width: 100%;
-        color: white;   
+        color: var(--primary-color);   
         padding-left: 5px;  
         margin-top: 5px;
         margin-bottom: 5px;
@@ -26,7 +26,8 @@
     }
 
     .drawer_menu_item[aria-current='page'], .drawer_menu_item:hover {
-        background-color: chocolate;
+        background-color: var(--primary-color);
+        color: white;
         border-radius: 5px;
         transition-duration: 0.45s;
     }
