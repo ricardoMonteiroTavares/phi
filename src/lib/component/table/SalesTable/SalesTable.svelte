@@ -36,7 +36,7 @@
         <th>Ações</th>
     </tr>
     {#each sales as sale, index}        
-        <SalesTableLine {...sale} />
+        <SalesTableLine {...sale} lastLine={index === (sales.length - 1)} />
     {/each}
 </table>
 
@@ -44,10 +44,11 @@
     .sales_table {
         width: 100%;
         border-collapse: collapse; 
+        color: var(--primary-color-dark);
     }
 
     .sales_table_header {
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--primary-color-dark);
         text-align: center;
         height: 40px;
     }
