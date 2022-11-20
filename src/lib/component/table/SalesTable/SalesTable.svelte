@@ -14,7 +14,7 @@
             data: '18/11/2022',
             value: '20,00',
             deliveryType: 'Buscar Loja',
-            status: 'Pago'
+            status: 'Aguardando Liberação'
         },
         {
             orderNumber: '0003',
@@ -45,6 +45,7 @@
         width: 100%;
         border-collapse: collapse; 
         color: var(--primary-color-dark);
+        text-align: center;
     }
 
     .sales_table_header {
