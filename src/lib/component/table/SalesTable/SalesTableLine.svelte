@@ -1,7 +1,7 @@
 <script lang="ts">
 	import DeliveryBadge from "$lib/component/badges/DeliveryBadge.svelte";
 	import StatusBadge from "$lib/component/badges/StatusBadge.svelte";
-    
+
 	import type { DeliveryEnum } from "$lib/core/enum/DeliveryEnum";
     import type { StatusEnum } from "$lib/core/enum/StatusEnum";
 
@@ -30,8 +30,13 @@
         border-bottom: 1px solid var(--primary-color-dark);        
         height: 40px;
     }
-
+    
     .sales_table_last_line {
         border-bottom: 0px;
+    }
+    
+    .sales_table_line td {
+        text-align: -webkit-center;
+        text-align: -moz-center;
     }
 </style>

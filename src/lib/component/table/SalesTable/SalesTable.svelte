@@ -45,7 +45,6 @@
         width: 100%;
         border-collapse: collapse; 
         color: var(--primary-color-dark);
-        text-align: center;
     }
 
     .sales_table_header {
