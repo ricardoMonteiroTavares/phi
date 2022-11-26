@@ -1,6 +1,7 @@
 <script lang="ts">
 	import DeliveryBadge from "$lib/component/badges/DeliveryBadge.svelte";
 	import StatusBadge from "$lib/component/badges/StatusBadge.svelte";
+	import Icon from "$lib/component/Icon.svelte";
 
 	import type { DeliveryEnum } from "$lib/core/enum/DeliveryEnum";
     import type { StatusEnum } from "$lib/core/enum/StatusEnum";
@@ -22,7 +23,7 @@
     <td>{value}</td>
     <td><DeliveryBadge delivery={_delivery} /></td>
     <td><StatusBadge status={_status} /></td>
-    <td></td>
+    <td><Icon name="eye"/> <Icon name="edit"/></td>
 </tr>
 
 <style>
