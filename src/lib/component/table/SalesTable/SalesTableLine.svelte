@@ -1,6 +1,7 @@
 <script lang="ts">
 	import DeliveryBadge from "$lib/component/badges/DeliveryBadge.svelte";
 	import StatusBadge from "$lib/component/badges/StatusBadge.svelte";
+	import IconButton from "$lib/component/buttons/IconButton.svelte";
 	import Icon from "$lib/component/Icon.svelte";
 
 	import type { DeliveryEnum } from "$lib/core/enum/DeliveryEnum";
@@ -23,7 +24,12 @@
     <td>{value}</td>
     <td><DeliveryBadge delivery={_delivery} /></td>
     <td><StatusBadge status={_status} /></td>
-    <td><Icon name="eye"/> <Icon name="edit"/></td>
+    <td>
+        <div class="action_col">
+            <IconButton name="eye" --color="#3794fc"/>
+            <IconButton name="edit" --color="#fcb41d"/>
+        </div>
+    </td>
 </tr>
 
 <style>
@@ -39,5 +45,11 @@
     .sales_table_line td {
         text-align: -webkit-center;
         text-align: -moz-center;
+    }
+
+    .action_col {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
     }
 </style>
